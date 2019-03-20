@@ -3,7 +3,15 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Test",
+      "type": "chrome",
+      "request": "launch",
+      "name": "start",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}",
+      "env": { "CI": "true" },
+    },
+    {
+      "name": "test",
       "type": "node",
       "request": "launch",
       "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/react-scripts",

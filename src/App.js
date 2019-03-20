@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 // will build react-npm-starter and saved in node_modules\react-npm-starter 
 import starter from 'react-npm-starter'
 let result = starter()
+console.log('result is:',result)
 
 class App extends Component {
   render() {

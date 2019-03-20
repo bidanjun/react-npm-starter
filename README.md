@@ -30,6 +30,7 @@ we could use some scripts like create-react-app
 ## test for library and demo app
 1. npm run test
 
-## known issue
-1. debug in vscode now couldn't work
-1. debug test in vscode couldn't work
+## visual studio code 
+1. at debug view,run "start" will debug demo app
+  we must run npm start first,and could use ctrl+shift+B to run it
+1. at debug view,run "test" will debug test

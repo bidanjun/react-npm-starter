@@ -1,4 +1,10 @@
 
+## np start could debug
+add:
+"env": { "CI": "true" },
+
+run npm start,then launch start in vscode
+
 ## npm run test now could debug
 add:
       "env": { "CI": "true" },
