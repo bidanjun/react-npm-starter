@@ -1,0 +1,50 @@
+{
+  "name": "react-npm-starter",
+  "version": "0.0.2",
+  "private": false,
+  "license": "BSD-3-Clause",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bidanjun/react-npm-starter.git"
+  },
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "./lib"
+  },
+  "files": [
+    "lib",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "fork-ts-checker-webpack-plugin-alt": "^0.4.14",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "react-scripts": "2.1.8",
+    "rimraf": "^2.6.3",
+    "webpack-cli": "^3.3.0"
+  },
+  "scripts": {
+    "build": " npm run clean && cross-env NODE_ENV=\"production\" webpack --config  ./config/webpack.lib.js ",
+    "go": "npm version patch && npm run build && npm publish ",
+    "copy": "cross-env NODE_ENV=\"production\" webpack --config  ./config/webpack.lib.js --output-path ./node_modules/react-npm-starter",
+    "clean": "rimraf lib",
+    "start": "react-scripts start",
+    "build:web": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
